@@ -10,7 +10,7 @@ class Mywidow(QWidget):
         self.setvlayout.addWidget(self.btn)
         self.btn.clicked.connect(self.btn_clicked)
         self.setLayout(self.setvlayout)
-    
+        
     def btn_clicked(self):
         # 参数第一项为父对象，第二项为标题，第三项为内容，第四项为可选按钮，第五项为默认按钮
         reply = QMessageBox.information(self,'标题','内容',QMessageBox.StandardButton.Ok|
